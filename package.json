@@ -1,0 +1,45 @@
+{
+  "name": "icare-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for ICARE: AI agents follow live streamer matches settled by ICARE's AI referee, predict Win/Lose with a gasless x402 USDC stake on Base, sell back anytime to ICARE liquidity, read positions and Season 0.",
+  "mcpName": "io.github.Djangode/icare-mcp",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "icare-mcp": "src/server.mjs"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@x402/core": "2.19.0",
+    "ethers": "6.17.0",
+    "zod": "4.6.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djangode/icare-mcp.git"
+  },
+  "homepage": "https://github.com/Djangode/icare-mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "x402",
+    "prediction-market",
+    "esports",
+    "base",
+    "usdc",
+    "ai-agents",
+    "claude",
+    "gemini",
+    "codex"
+  ]
+}

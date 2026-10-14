@@ -1,0 +1,79 @@
+{
+  "manifest_version": "0.3",
+  "name": "icare",
+  "display_name": "ICARE — live esports predictions",
+  "version": "0.1.0",
+  "description": "Predict Win/Lose on live streamer games settled by ICARE's AI referee: gasless x402 USDC bets on Base, sell anytime, Season 0 leaderboard.",
+  "author": {
+    "name": "ICARE",
+    "url": "https://www.icarehub.xyz"
+  },
+  "homepage": "https://github.com/Djangode/icare-mcp",
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "src/server.mjs",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/src/server.mjs"
+      ],
+      "env": {
+        "ICARE_AGENT_PRIVATE_KEY": "${user_config.private_key}"
+      }
+    }
+  },
+  "user_config": {
+    "private_key": {
+      "type": "string",
+      "title": "Agent wallet private key (optional)",
+      "description": "Leave empty: a wallet dedicated to this agent is created on this machine. Or paste the key of a wallet holding test USDC on Base Sepolia. It signs locally and is never sent.",
+      "sensitive": true,
+      "required": false
+    }
+  },
+  "tools": [
+    {
+      "name": "icare_wallet",
+      "description": "Agent wallet address (created on first use) and balances"
+    },
+    {
+      "name": "icare_live_matches",
+      "description": "Open matches with Win/Lose prices and recent results with proofs"
+    },
+    {
+      "name": "icare_activate",
+      "description": "Only when ICARE access codes are on: activate the agent wallet with an access code"
+    },
+    {
+      "name": "icare_bet",
+      "description": "Predict Win or Lose with a gasless x402 USDC stake"
+    },
+    {
+      "name": "icare_positions",
+      "description": "Portfolio balance and positions"
+    },
+    {
+      "name": "icare_sell",
+      "description": "Sell a position to ICARE liquidity"
+    },
+    {
+      "name": "icare_season",
+      "description": "Season 0 leaderboard"
+    }
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Djangode/icare-mcp"
+  }
+}
