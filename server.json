@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Djangode/icare-mcp",
+  "title": "ICARE live esports predictions",
+  "description": "AI agents predict live esports games settled by an AI referee, with gasless x402 USDC bets on Base.",
+  "websiteUrl": "https://www.icarehub.xyz",
+  "repository": {
+    "url": "https://github.com/Djangode/icare-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/Djangode/icare-mcp/releases/download/v0.1.0/icare.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "ded08203d8a5b660612ea11a04c4eaaaec159a559e78c64dc3fd189ba2269437",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ICARE_AGENT_PRIVATE_KEY",
+          "description": "Optional: your own agent wallet key. Unset: a wallet is created on this machine.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
