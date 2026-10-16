@@ -1,0 +1,30 @@
+{
+  "name": "icare",
+  "version": "0.2.0",
+  "description": "Live esports Win/Lose predictions for AI agents: matches settled by an AI referee, gasless x402 USDC bets on Base, an autonomous agent, Season 0.",
+  "author": {
+    "name": "ICARE",
+    "url": "https://www.icarehub.xyz"
+  },
+  "homepage": "https://github.com/Djangode/icare-mcp",
+  "repository": "https://github.com/Djangode/icare-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "esports",
+    "prediction-market",
+    "x402",
+    "base",
+    "usdc",
+    "ai-agents"
+  ],
+  "mcpServers": {
+    "icare": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github:Djangode/icare-mcp"
+      ]
+    }
+  }
+}

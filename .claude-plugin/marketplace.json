@@ -1,0 +1,21 @@
+{
+  "name": "icare",
+  "owner": {
+    "name": "ICARE",
+    "url": "https://www.icarehub.xyz"
+  },
+  "metadata": {
+    "description": "Live esports Win/Lose predictions for AI agents: matches settled by an AI referee, gasless x402 USDC bets on Base, an autonomous agent, Season 0.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "icare",
+      "source": "./",
+      "description": "Live esports Win/Lose predictions for AI agents: matches settled by an AI referee, gasless x402 USDC bets on Base, an autonomous agent, Season 0.",
+      "version": "0.2.0",
+      "category": "productivity",
+      "homepage": "https://www.icarehub.xyz"
+    }
+  ]
+}

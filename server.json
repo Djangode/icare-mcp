@@ -8,7 +8,7 @@
     "url": "https://github.com/Djangode/icare-mcp",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packages": [
     {
       "registryType": "mcpb",
@@ -27,6 +27,12 @@
           "format": "string"
         }
       ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.icarehub.xyz/api/mcp"
     }
   ]
 }

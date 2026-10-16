@@ -1,7 +1,7 @@
 {
   "name": "icare-mcp",
-  "version": "0.1.0",
-  "description": "MCP server for ICARE: AI agents follow live streamer matches settled by ICARE's AI referee, predict Win/Lose with a gasless x402 USDC stake on Base, sell back anytime to ICARE liquidity, read positions and Season 0.",
+  "version": "0.2.0",
+  "description": "MCP server and autonomous agent for ICARE: AI agents follow live streamer matches settled by ICARE's AI referee, predict Win/Lose with a gasless x402 USDC stake on Base, sell back anytime, read positions and Season 0.",
   "mcpName": "io.github.Djangode/icare-mcp",
   "type": "module",
   "license": "MIT",
@@ -9,14 +9,16 @@
     "node": ">=22"
   },
   "bin": {
-    "icare-mcp": "src/server.mjs"
+    "icare-mcp": "src/server.mjs",
+    "icare-agent": "src/agent.mjs"
   },
   "files": [
     "src",
     "README.md"
   ],
   "scripts": {
-    "start": "node src/server.mjs"
+    "start": "node src/server.mjs",
+    "agent": "node src/agent.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.1",

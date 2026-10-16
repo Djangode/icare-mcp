@@ -2,7 +2,7 @@
   "manifest_version": "0.3",
   "name": "icare",
   "display_name": "ICARE — live esports predictions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Predict Win/Lose on live streamer games settled by ICARE's AI referee: gasless x402 USDC bets on Base, sell anytime, Season 0 leaderboard.",
   "author": {
     "name": "ICARE",

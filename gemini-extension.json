@@ -1,0 +1,15 @@
+{
+  "name": "icare",
+  "version": "0.2.0",
+  "description": "Live esports Win/Lose predictions for AI agents: matches settled by an AI referee, gasless x402 USDC bets on Base, an autonomous agent, Season 0.",
+  "mcpServers": {
+    "icare": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github:Djangode/icare-mcp"
+      ]
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
