@@ -12,9 +12,9 @@
   "packages": [
     {
       "registryType": "mcpb",
-      "identifier": "https://github.com/Djangode/icare-mcp/releases/download/v0.1.0/icare.mcpb",
-      "version": "0.1.0",
-      "fileSha256": "ded08203d8a5b660612ea11a04c4eaaaec159a559e78c64dc3fd189ba2269437",
+      "identifier": "https://github.com/Djangode/icare-mcp/releases/download/v0.2.0/icare.mcpb",
+      "version": "0.2.0",
+      "fileSha256": "c21c80f765eae3e01fd9867949c1ed282727f8b7c2f44b056e22d421f193bb25",
       "transport": {
         "type": "stdio"
       },
